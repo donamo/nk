@@ -1,0 +1,49 @@
+
+[Nest] 31666  - 10/24/2022, 3:46:59 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 31666  - 10/24/2022, 3:46:59 PM     LOG [InstanceLoader] ClientsModule dependencies initialized +15ms
+[Nest] 31666  - 10/24/2022, 3:46:59 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 31666  - 10/24/2022, 3:46:59 PM     LOG [InstanceLoader] StorageModule dependencies initialized +0ms
+[Nest] 31666  - 10/24/2022, 3:46:59 PM    WARN [ServerKafka] WARN [undefined] KafkaJS v2.0.0 switched default partitioner. To retain the same partitioning behavior as in previous versions, create the producer with the option "createPartitioner: Partitioners.LegacyPartitioner". See the migration guide at https://kafka.js.org/docs/migration-guide-v2.0.0#producer-new-default-partitioner for details. Silence this warning by setting the environment variable "KAFKAJS_NO_PARTITIONER_WARNING=1" {"timestamp":"2022-10-24T13:46:59.134Z","logger":"kafkajs"}
+[Nest] 31666  - 10/24/2022, 3:46:59 PM     LOG [ServerKafka] INFO [Consumer] Starting {"timestamp":"2022-10-24T13:46:59.147Z","logger":"kafkajs","groupId":"store-group-server"}
+[Nest] 31666  - 10/24/2022, 3:47:02 PM     LOG [ServerKafka] INFO [ConsumerGroup] Consumer has joined the group {"timestamp":"2022-10-24T13:47:02.157Z","logger":"kafkajs","groupId":"store-group-server","memberId":"nestjs-consumer-server-c3fae880-f18e-4726-abf5-cacd7eabcc94","leaderId":"nestjs-consumer-server-c3fae880-f18e-4726-abf5-cacd7eabcc94","isLeader":true,"memberAssignment":{"hero.kill.dragon":[0]},"groupProtocol":"RoundRobinAssigner","duration":3009}
+[Nest] 31666  - 10/24/2022, 3:47:02 PM     LOG [NestMicroservice] Nest microservice successfully started +1ms
+[Nest] 31666  - 10/24/2022, 3:47:02 PM     LOG [RoutesResolver] AppController {/}: +3ms
+[Nest] 31666  - 10/24/2022, 3:47:02 PM     LOG [RouterExplorer] Mapped {/, GET} route +1ms
+[Nest] 31666  - 10/24/2022, 3:47:02 PM     LOG [RoutesResolver] StorageController {/storage}: +0ms
+[Nest] 31666  - 10/24/2022, 3:47:02 PM     LOG [RouterExplorer] Mapped {/storage, GET} route +1ms
+[Nest] 31666  - 10/24/2022, 3:47:02 PM     LOG [NestApplication] Nest application successfully started +1ms
+now send
+[
+  { id: 0.8569840601892216, name: 'Mythical Sword' },
+  { id: 0.734917922580868, name: 'Key to Dungeon' }
+]
+[Nest] 31666  - 10/24/2022, 3:47:06 PM     LOG [ClientKafka] INFO [Consumer] Starting {"timestamp":"2022-10-24T13:47:06.940Z","logger":"kafkajs","groupId":"storage-consumer-client"}
+now send
+[
+  { id: 0.44963933043182336, name: 'Mythical Sword' },
+  { id: 0.170524814152494, name: 'Key to Dungeon' }
+]
+now send
+[
+  { id: 0.6076109126158566, name: 'Mythical Sword' },
+  { id: 0.9575221860060636, name: 'Key to Dungeon' }
+]
+now send
+[
+  { id: 0.08812600008073845, name: 'Mythical Sword' },
+  { id: 0.9380143971912356, name: 'Key to Dungeon' }
+]
+[Nest] 31666  - 10/24/2022, 3:47:09 PM     LOG [ClientKafka] INFO [ConsumerGroup] Consumer has joined the group {"timestamp":"2022-10-24T13:47:09.948Z","logger":"kafkajs","groupId":"storage-consumer-client","memberId":"hero-client-d2253495-61b5-428d-a6a9-45de61e5456e","leaderId":"hero-client-d2253495-61b5-428d-a6a9-45de61e5456e","isLeader":true,"memberAssignment":{},"groupProtocol":"NestReplyPartitionAssigner","duration":3007}
+Message recived: [
+  { id: 0.8569840601892216, name: 'Mythical Sword' },
+  { id: 0.734917922580868, name: 'Key to Dungeon' }
+]
+now send
+[
+  { id: 0.09626010474496915, name: 'Mythical Sword' },
+  { id: 0.9540950454194526, name: 'Key to Dungeon' }
+]
+Message recived: [
+  { id: 0.09626010474496915, name: 'Mythical Sword' },
+  { id: 0.9540950454194526, name: 'Key to Dungeon' }
+]

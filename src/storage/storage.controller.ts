@@ -10,15 +10,62 @@ export class StorageController {
 
   @Get()
   async getHello(): Promise<{ storage: { [key: string]: number } }> {
-    const items = [
-      { id: Math.random(), name: 'Mythical Sword' },
-      { id: Math.random(), name: 'Key to Dungeon' },
-    ];
-    console.log('now send');
-    console.log(items);
+    const array = [];
+    {
+      const items = [
+        { id: Math.random(), name: 'Mythical Sword' },
+        { id: Math.random(), name: 'Key to Dungeon' },
+      ];
+      console.log('now send');
+      console.log(items);
 
-    this.client.emit('hero.kill.dragon', items);
+      this.client.emit('hero.kill.dragon', items);
+      array.push(items);
+    }
+    {
+      const items = [
+        { id: Math.random(), name: 'Mythical Sword' },
+        { id: Math.random(), name: 'Key to Dungeon' },
+      ];
+      console.log('now send');
+      console.log(items);
 
+      this.client.emit('hero.kill.dragon', items);
+      array.push(items);
+    }
+    {
+      const items = [
+        { id: Math.random(), name: 'Mythical Sword' },
+        { id: Math.random(), name: 'Key to Dungeon' },
+      ];
+      console.log('now send');
+      console.log(items);
+
+      this.client.emit('hero.kill.dragon', items);
+      array.push(items);
+    }
+    {
+      const items = [
+        { id: Math.random(), name: 'Mythical Sword' },
+        { id: Math.random(), name: 'Key to Dungeon' },
+      ];
+      console.log('now send');
+      console.log(items);
+
+      this.client.emit('hero.kill.dragon', items);
+      array.push(items);
+    }
+    {
+      const items = [
+        { id: Math.random(), name: 'Mythical Sword' },
+        { id: Math.random(), name: 'Key to Dungeon' },
+      ];
+      console.log('now send');
+      console.log(items);
+
+      this.client.emit('hero.kill.dragon', items);
+      array.push(items);
+    }
     return { storage: { salt: 1 } };
   }
 
